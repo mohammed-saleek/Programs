@@ -5,10 +5,10 @@ class Solution(object):
         :type val: int
         :rtype: int
         """
-        # nums_copy = nums.copy()
         nums_copy = []
-        for i in nums:
-            nums_copy.append(i)
+        # nums_copy = nums.copy()
+        for item in nums:
+            nums_copy.append(item)
         for index,value in enumerate(nums_copy):
             if value == val:
                 nums.remove(value)
