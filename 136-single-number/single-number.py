@@ -10,8 +10,8 @@ class Solution(object):
                 mapper[nums] += 1
             elif nums not in mapper:
                 mapper[nums] = 1
-        for key,value in mapper.items():
-            if value == 1:
-                unique_number = key
-        # unique_number = next((key for key,value in mapper.items() if value == 1), None)
+        # for key,value in mapper.items():
+        #     if value == 1:
+        #         unique_number = key
+        unique_number = next((key for key,value in mapper.items() if value == 1), None)
         return unique_number
