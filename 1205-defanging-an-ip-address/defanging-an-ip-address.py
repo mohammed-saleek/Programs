@@ -4,5 +4,5 @@ class Solution(object):
         :type address: str
         :rtype: str
         """
-        address = address.replace('.','[.]')
-        return address
+        response = address.split('.')
+        return '[.]'.join(response)
